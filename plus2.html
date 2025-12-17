@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+2 Programs - Jana Jagriti Secondary School</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin: 30px 0;
+        }
+
+        .section {
+            max-width: 1100px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+
+        .incharge-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 4px solid #1e3a8a;
+        }
+
+        .incharge-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .streams-grid,
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .stream-card,
+        .facility-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .stream-card:hover,
+        .facility-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .teacher-access-section {
+            background-color: #f0f4ff;
+            padding: 50px 0;
+        }
+
+        .teacher-access-section .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .teacher-access-section img {
+            max-width: 360px;
+            width: 100%;
+            border-radius: 12px;
+            border: 3px solid #1e3a8a;
+        }
+
+        .continuous-slider {
+            overflow: hidden;
+        }
+
+        .slider-track {
+            display: flex;
+            gap: 1rem;
+            animation: scrollLeft 20s linear infinite;
+        }
+
+        .slider-track img {
+            height: 180px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .slider-track img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .contact-section {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        Jana Jagriti Secondary School
+     
+    </header>
+
+    <h1 class="page-title">+2 Programs</h1>
+
+    <!-- +2 Incharge -->
+    <section class="section text-center">
+        <div class="incharge-photo">
+            <img src="plus2/+2incharge.jpg" alt="+2 Incharge">
+        </div>
+        <h2 class="text-2xl font-semibold text-blue-900 mb-2">Words from +2 Incharge</h2>
+        <p class="max-w-xl mx-auto text-gray-700">
+            Our +2 programs are designed to prepare students for higher education and professional success with strong
+            academic guidance and discipline.
+        </p>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="section bg-blue-50 py-12 rounded-xl">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Why Choose +2 at Our School?</h2>
+        <div class="max-w-3xl mx-auto space-y-3 text-gray-700">
+            <p>✔ Experienced and dedicated teachers</p>
+            <p>✔ Well-equipped computer laboratory</p>
+            <p>✔ Scholarship support for deserving students</p>
+            <p>✔ Career counseling and exam preparation</p>
+            <p>✔ Practical learning and educational tours</p>
+        </div>
+    </section>
+
+    <!-- Streams -->
+    <section class="section">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Streams Offered</h2>
+        <div class="streams-grid">
+            <div class="stream-card">
+                <h3 class="text-xl font-semibold text-blue-900 mb-2">Management</h3>
+                <ul class="list-disc text-left ml-5 text-gray-700">
+                    <li>English</li>
+                    <li>Nepali</li>
+                    <li>Account</li>
+                    <li>Economics </li>
+                    <li>Social</li>
+                    <li>Computer / Business</li>
+                </ul>
+            </div>
+
+            <div class="stream-card">
+                <h3 class="text-xl font-semibold text-blue-900 mb-2">Education</h3>
+                <ul class="list-disc text-left ml-5 text-gray-700">
+                    <li>Nepali </li>
+                    <li>English</li>
+                    <li>Social </li>
+                    <li> Pedagogy</li>
+                    <li>Major: Nepali / English / Health</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ RESULTS SECTION (NEW) -->
+    <section class="section bg-blue-50 py-12 rounded-xl">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Results & Pass Percentage</h2>
+
+        <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6 text-center">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-4xl font-bold text-blue-900">90%+</h3>
+                <p class="text-gray-600 mt-2">Overall Pass Rate</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-4xl font-bold text-blue-900">5 Years</h3>
+                <p class="text-gray-600 mt-2">Consistent Performance</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-4xl font-bold text-blue-900">Excellent</h3>
+                <p class="text-gray-600 mt-2">Board Exam Results</p>
+            </div>
+        </div>
+
+        <p class="text-center text-gray-700 mt-6 max-w-2xl mx-auto">
+            Our +2 students have consistently achieved excellent results in NEB examinations, reflecting our quality
+            teaching and disciplined academic environment.
+        </p>
+    </section>
+
+    <!-- Facilities -->
+    <section class="section">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Facilities & Programs</h2>
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <h4 class="font-semibold text-blue-900">Computer Lab</h4>
+                <p class="text-gray-600">Modern lab for practical learning</p>
+            </div>
+            <div class="facility-card">
+                <h4 class="font-semibold text-blue-900">Library</h4>
+                <p class="text-gray-600">Academic books and reference materials</p>
+            </div>
+            <div class="facility-card">
+                <h4 class="font-semibold text-blue-900">Scholarships</h4>
+                <p class="text-gray-600">Support for deserving students</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers -->
+    <section class="teacher-access-section">
+        <div class="container">
+            <img src="teachers/teachers.jpg" alt="Teachers">
+            <div>
+                <h2 class="text-2xl font-bold text-blue-900 mb-3">Our Teachers & Staff</h2>
+                <p class="text-gray-700 mb-4">
+                    Meet our experienced and qualified +2 faculty members.
+                </p>
+                <a href="teachers.html"
+                    class="inline-block bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">
+                    View Profiles →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour -->
+    <section class="section">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Educational Tours</h2>
+        <div class="continuous-slider">
+            <div class="slider-track">
+                <img src="plus2tour/tour1.jpg">
+                <img src="plus2tour/tour2.jpg">
+                <img src="plus2tour/tour3.jpg">
+                <img src="plus2tour/tour4.jpg">
+                <img src="plus2tour/tour5.jpg">
+                <img src="plus2tour/tour6.jpg">
+                <img src="plus2tour/tour7.jpg">
+                <img src="plus2tour/tour8.jpg">
+                <img src="plus2tour/tour9.jpg">
+                <img src="plus2tour/tour10.jpg">
+                <img src="plus2tour/tour11.jpg">
+                <img src="plus2tour/tour12.jpg">
+                <img src="plus2tour/tour13.jpg">
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Useful Links Redirect -->
+<section class="text-center my-8">
+    <p class="text-blue-900 font-semibold">
+        Check all <a href="links.html" class="underline hover:text-blue-700">Useful Links & Downloads</a>
+    </p>
+</section>
+
+  <section class="text-center my-8">
+    <p class="text-gray-700 mb-3">
+       Apply now to secure your seat!
+    </p>
+    <a href="admission.html"
+       class="inline-block bg-yellow-400 text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition">
+        Apply for +2 Admission →
+    </a>
+</section>
+<!-- Back to Home Button -->
+<div class="text-center my-6">
+    <a href="index.html" 
+       class="inline-block bg-blue-900 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-800 transition">
+        ← Back to Home
+    </a>
+</div>
+
+
+
+    <!-- Contact -->
+    <section class="section contact-section">
+        <h2 class="text-3xl font-bold mb-4">Contact & Admission Info</h2>
+        <p>+2 Incharge: 98550XXXXX</p>
+        <p>Email: jjsspithuwa@gmail.com</p>
+        <p>Pithuwa, Ratnanagar, Chitwan</p>
+    </section>
+<!-- FOOTER -->
+<footer class="text-center text-gray-600 py-6">
+    © 2025 Jana Jagriti Secondary School
+</footer>
+</body>
+
+</html>
