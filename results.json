@@ -1,0 +1,65 @@
+{
+  "1": [],
+  "2": [],
+  "3": [],
+  "4": [],
+  "5": [],
+  "6": [],
+  "7": [],
+  "8": [],
+  "9": [
+    {
+      "symbol": "123456",
+      "name": "Suman Adhikari",
+      "subjects": {
+        "Nepali": 85,
+        "English": 78,
+        "Math": 92,
+        "Science": 88,
+        "Social": 80
+      },
+      "gpa": 3.65
+    },
+    {
+      "symbol": "123457",
+      "name": "Aarav Sharma",
+      "subjects": {
+        "Nepali": 82,
+        "English": 80,
+        "Math": 90,
+        "Science": 85,
+        "Social": 88
+      },
+      "gpa": 3.60
+    }
+
+  ],
+  "11": [],
+  "12": [
+    {
+      "symbol": "2081001",
+      "name": "Ankit Khanal",
+      "subjects": {
+        "English": 75,
+        "Account": 82,
+        "Economics": 79,
+        "Computer": 90,
+        "Nepali": 87
+      },
+      "gpa": 3.72
+    },
+    {
+        "symbol": "2081002",
+        "name" : "Simsan Sunar",
+        "subjects": {
+            "English": 80,
+            "Account": 82,
+            "Computer": 35,
+            "Economics" : 43,
+            "Nepali" : 35
+        },
+        "gpa" : 3.10
+        }
+    
+  ]
+}
