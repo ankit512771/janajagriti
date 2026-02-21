@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <script async src="https://js.onclckmn.com/static/onclicka.js" data-admpid="427169"></script>
+ <script type="text/javascript" src="https://docdn.ezmob.com/prebid.js" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jana Jagriti Secondary School</title>
@@ -527,7 +527,7 @@
             </div>
         </div>
     </section>
-
+<div id="container-1"></div>
     <!-- Useful Links Redirect -->
     <section class="text-center my-8">
         <p class="text-blue-900 font-semibold">
@@ -651,9 +651,59 @@
             document.getElementById('lightboxImg').src = images[currentIndex].src;
         }
     </script>
+<script>
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
 
+pbjs.que.push(function() {
+    var adUnits = [{
+        code: 'container-1',
+        mediaTypes: {
+            video: {
+                context: 'outstream',
+                playerSize: [300, 250],
+                renderer: {
+                    url: 'https://docdn.ezmob.com/outstream_pb.js',
+                    render: renderOutstream
+                }
+            }
+        },
+        bids: [{
+            bidder: 'adkernel',
+            params: {
+                zoneId: 335468,
+                host: 'cpm.ezmob.com'
+            }
+        }]
+    }];
+
+    pbjs.addAdUnits(adUnits);
+
+    pbjs.requestBids({
+        bidsBackHandler: function() {
+            process('container-1');
+        }
+    });
+});
+
+function process(adUnit) {
+    var bidResponses = pbjs.getHighestCpmBids(adUnit);
+    if (bidResponses.length === 0) return;
+    var bid = bidResponses[0];
+    pbjs.renderAd(document, bid.adId);
+}
+
+function renderOutstream(bid) {
+    OutstreamPlayerPB(bid, {
+        displayMode: 'floating',
+        transitions: true,
+        vpaidMode: 2
+    });
+}
+</script>
 </body>
 
 </html>
+
 
 
